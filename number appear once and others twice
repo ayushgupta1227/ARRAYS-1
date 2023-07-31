@@ -1,0 +1,19 @@
+   int singleNumber(vector<int>& nums) {   // it is the optimal approach 
+        int xorr=0;
+        for(int i=0;i<nums.size();i++){
+            xorr=xorr ^ nums[i];  tc: O(n) and sc: o(1)
+        }
+        return xorr;
+        
+    }
+};
+
+
+// better approach
+map<long long,int>
+for(i=0;i<n;i++){    // here ordered map is used in place of unordered map depending on the critical inputs
+mpp {arr[i]}++;
+for(auto it:mpp){
+if(it.second==1){     tc: O(n/2+1) + O(nlogm)
+return it.first;      sc: O(n/2+1)
+}
