@@ -1,5 +1,5 @@
 https://takeuforward.org/wp-content/uploads/2023/03/ArrayRotationLeft.png
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>   tc; O(2N) AND sc: O(1)
 #include <iostream>
 using namespace std;
 void leftRotate(int arr[],int n,int d){
