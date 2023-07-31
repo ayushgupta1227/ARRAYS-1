@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h> // here the time complexity is O(N) and space complexity is O(1).
 int largestElement(vector<int> &arr, int n) {
     // Write your code here.
     int largest=arr[0];
