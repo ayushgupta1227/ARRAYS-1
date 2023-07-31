@@ -1,0 +1,14 @@
+int missingNumber(vector<int>&a, int N) {
+    // Write your code here.       // there are two optimal approaches to solve this problem one is by sum and other is by xor,where xor is 
+    much better than sum since there max N=10^5 can be accounted and not more than that whereas in sum any power can be taken into account.
+       int xor1=0, xor2=0;
+        int n= N-1;
+        for(int i=0;i<n;i++){
+            xor2 = xor2^a[i];
+            xor1 = xor1^(i+1);
+        }
+        xor1= xor1 ^ N;
+        return xor1 ^ xor2;
+        
+    
+}
