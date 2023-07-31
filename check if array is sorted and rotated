@@ -1,4 +1,4 @@
-class Solution {
+class Solution {               TC: O(N)
 public:
     bool check(vector<int>& nums) {
         int n=nums.size();
