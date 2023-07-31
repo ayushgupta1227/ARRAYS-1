@@ -1,4 +1,4 @@
-class Solution {
+class Solution {   // Tc: o(N)  ND sc: O(1)
 public:
     int removeDuplicates(vector<int>& nums) {
             int i = 0;
