@@ -1,4 +1,4 @@
-int secondLargest(vector<int>&a,int n){
+int secondLargest(vector<int>&a,int n){                           // TC: O(2N) nd SC: O(1)
     // Write your code here.int secondLargest(vector<int> &a,int n){
     int largest=a[0];
     int slargest=-1;
