@@ -1,5 +1,5 @@
-  vector<int> twoSum(vector<int>& nums, int target) {
-     map<int,int>mpp;
+  vector<int> twoSum(vector<int>& nums, int target) {  //tc: o(nlogn) depending on type of map and sc: o(n)
+     map<int,int>mpp;                                  // it is using map 
      int n=nums.size();
      for(int i=0;i<n;i++){
          int num=nums[i];
@@ -12,3 +12,17 @@
      return {-1,-1};
     }
 };
+
+// using 2 pointer approach      // here the tc is o(n)+o(nlogn) and the distorted sc is o(n),otherwise it is o(1)
+int left=0,right=n-1;        
+sort(book.begin(),book.end());
+    while(left<right){
+        int sum=book[left]+book[right];
+        if (sum == target) {
+          return "YES";
+        } else if (sum < target)left++;
+        else right--;
+          
+    }
+    return "NO";
+}
